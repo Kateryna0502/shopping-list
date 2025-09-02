@@ -71,6 +71,11 @@ main {
     width: 534px;
     height: 45px;
     border: 1px solid #000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    color: #ffffff;
   }
   /* для парних label */
   label:nth-of-type(even) {
@@ -80,5 +85,17 @@ main {
   /* для непарних label */
   label:nth-of-type(odd) {
     background-color: #88839e;
+  }
+  input[type="checkbox"] {
+    width: 19px;
+    height: 19px;
+    background: #fff;
+  }
+  span {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    font-size: 11px;
   }
 }
