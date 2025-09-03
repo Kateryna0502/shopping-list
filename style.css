@@ -70,32 +70,70 @@ main {
     gap: 10px;
     width: 534px;
     height: 45px;
-    border: 1px solid #000;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     align-items: center;
     color: #ffffff;
   }
-  /* для парних label */
-  label:nth-of-type(even) {
+  li label:hover {
+    background-color: #625e77;
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    height: 39px;
+  }
+
+  li label:active {
+    background-color: red;
+  }
+
+  li:nth-child(2n + 1) {
+    background-color: #88839e;
+  }
+
+  li:nth-child(2n) {
     background-color: #7a7593;
   }
 
-  /* для непарних label */
-  label:nth-of-type(odd) {
-    background-color: #88839e;
-  }
   input[type="checkbox"] {
-    width: 19px;
+    accent-color: white;
     height: 19px;
-    background: #fff;
+    width: 19px;
+    margin: 0 10px;
+    cursor: pointer;
   }
-  span {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 18px;
-    color: #fff;
+
+  input[type="checkbox"]:checked + p span {
+    color: #a39fb4;
+    text-decoration: line-through;
+  }
+
+  input[type="checkbox"]:checked {
+    accent-color: #a39fb4;
+  }
+
+  p span:last-of-type {
     font-size: 11px;
+    vertical-align: middle;
   }
+
+  p span:last-of-type:checked {
+    font-size: 11px;
+    vertical-align: middle;
+    text-decoration: line-through;
+  }
+}
+footer {
+  margin: auto;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  height: 45px;
+  width: 534px;
+  background-color: #4a4f56;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ff8984;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
